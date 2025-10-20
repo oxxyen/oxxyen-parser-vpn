@@ -57,7 +57,7 @@ MAX_SOURCES=50
 ## ▶️ Запуск
 
 ```bash
-node bot.js
+node script.js
 ```
 
 Бот начнёт:
