@@ -1,0 +1,4 @@
+YOU NEED INSTALL THIS PACKAGES!
+
+npm init -y
+npm install telegraf axios cheerio puppeteer-extra puppeteer-extra-plugin-stealth 
