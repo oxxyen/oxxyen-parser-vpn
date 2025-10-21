@@ -25,6 +25,45 @@
 
 ---
 
+### Структура проекта 
+
+─ .env.example
+├── .env
+├── package.json
+├── src/
+│   ├── index.js                     # точка входа
+│   ├── config.js                    # загрузка и валидация .env
+│   ├── bot.js                       # Telegram-бот и отправка сообщений
+│   ├── scanner/
+│   │   ├── index.js                 # основной сканер (AdvancedProxyScanner)
+│   │   ├── sources/                 # источники данных
+│   │   │   ├── api/
+│   │   │   │   ├── proxyscrape.js
+│   │   │   │   ├── geonode.js
+│   │   │   │   ├── htmlweb.js
+│   │   │   │   └── ...
+│   │   │   ├── html/
+│   │   │   │   ├── freeProxyList.js
+│   │   │   │   ├── spysMe.js
+│   │   │   │   ├── hidemyName.js
+│   │   │   │   └── ...
+│   │   │   ├── vpn/
+│   │   │   │   ├── vpngate.js
+│   │   │   │   ├── githubOpenvpn.js
+│   │   │   │   └── ...
+│   │   │   └── dns/
+│   │   │       └── resolvers.js
+│   │   ├── proxyChecker.js          # ultraProxyTest + processProxiesUltraFast
+│   │   └── categorizer.js           # categorizeProxiesUltra + getTopProxiesByCategory
+│   ├── formatter/
+│   │   └── messageFormatter.js      # UltraMessageFormatter
+│   └── utils/
+│       ├── browser.js               # ResourceManager + Puppeteer
+│       ├── delay.js                 # humanDelay
+│       └── helpers.js               # getCategoryIcon, validateIP и т.п.
+├── logs/
+└── README.md
+
 ## 🛠️ Установка
 
 ### 1. Клонируйте репозиторий
